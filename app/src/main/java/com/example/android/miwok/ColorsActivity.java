@@ -22,17 +22,17 @@ public class ColorsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_colors);
 
 
-        ArrayList<Color> colors = new ArrayList<Color>();
-        colors.add(new Color("red","weṭeṭṭi"));
-        colors.add(new Color("green","chokokki"));
-        colors.add(new Color("brown","ṭakaakki"));
-        colors.add(new Color("gray","ṭopoppi"));
-        colors.add(new Color("black","kululli"));
-        colors.add(new Color("white","kelelli"));
-        colors.add(new Color("dusty yellow","ṭopiisә"));
-        colors.add(new Color("mustard yellow","chiwiiṭә"));
+        ArrayList<Word> colors = new ArrayList<Word>();
+        colors.add(new Word("red","weṭeṭṭi"));
+        colors.add(new Word("green","chokokki"));
+        colors.add(new Word("brown","ṭakaakki"));
+        colors.add(new Word("gray","ṭopoppi"));
+        colors.add(new Word("black","kululli"));
+        colors.add(new Word("white","kelelli"));
+        colors.add(new Word("dusty yellow","ṭopiisә"));
+        colors.add(new Word("mustard yellow","chiwiiṭә"));
 
-        ColorAdapter colorAdapter = new ColorAdapter(this, colors);
+        WordAdapter colorAdapter = new WordAdapter(this, colors);
 
         ListView listView = findViewById(R.id.colors);
 

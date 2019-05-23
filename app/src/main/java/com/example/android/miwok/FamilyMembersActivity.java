@@ -22,19 +22,19 @@ public class FamilyMembersActivity extends AppCompatActivity {
         setContentView(R.layout.activity_famile_members);
 
 
-        ArrayList<FamilyMember> familyMembers = new ArrayList<FamilyMember>();
-        familyMembers.add(new FamilyMember("father","әpә"));
-        familyMembers.add(new FamilyMember("mother","әṭa"));
-        familyMembers.add(new FamilyMember("son","angsi"));
-        familyMembers.add(new FamilyMember("daughter","tune"));
-        familyMembers.add(new FamilyMember("older brother","taachi"));
-        familyMembers.add(new FamilyMember("younger brother","chalitti"));
-        familyMembers.add(new FamilyMember("older sister","tete"));
-        familyMembers.add(new FamilyMember("younger sister","kolliti"));
-        familyMembers.add(new FamilyMember("grandmother","ama"));
-        familyMembers.add(new FamilyMember("grandfather","paapa"));
+        ArrayList<Word> familyMembers = new ArrayList<Word>();
+        familyMembers.add(new Word("father","әpә"));
+        familyMembers.add(new Word("mother","әṭa"));
+        familyMembers.add(new Word("son","angsi"));
+        familyMembers.add(new Word("daughter","tune"));
+        familyMembers.add(new Word("older brother","taachi"));
+        familyMembers.add(new Word("younger brother","chalitti"));
+        familyMembers.add(new Word("older sister","tete"));
+        familyMembers.add(new Word("younger sister","kolliti"));
+        familyMembers.add(new Word("grandmother","ama"));
+        familyMembers.add(new Word("grandfather","paapa"));
 
-        FamilyMemberAdapter familyMemberAdapter = new FamilyMemberAdapter(this, familyMembers);
+        WordAdapter familyMemberAdapter = new WordAdapter(this, familyMembers);
 
         ListView listView = findViewById(R.id.family_members);
 
